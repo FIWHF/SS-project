@@ -1,0 +1,166 @@
+body {
+    min-height: 300dvh;
+    min-width: 300dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.storage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sun {
+    height: 75px;
+    width: 75px;
+    background-color: darkred;
+    border-radius: 100%;
+
+}
+
+.mercury {
+
+    width: 7px;
+    height: 7px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit1 3s infinite;
+    animation-timing-function: linear;
+}
+
+.venus {
+
+    width: 14px;
+    height: 14px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit2 11s infinite;
+    animation-timing-function: linear;
+}
+
+.earth {
+
+    width: 15px;
+    height: 15px;
+    background-color: lightblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit3 10s infinite;
+    animation-timing-function: linear;
+}
+
+.mars {
+
+    width: 15px;
+    height: 15px;
+    background-color: maroon;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit4 16s infinite;
+    animation-timing-function: linear;
+}
+
+.jupiter {
+
+    width: 50px;
+    height: 50px;
+    background-color: darkorange;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit5 25s infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes PlanetOrbit1 {
+    from {
+        transform: rotate(0) translate(60px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(60px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit2 {
+    from {
+        transform: rotate(0) translate(90px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(90px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit3 {
+    from {
+        transform: rotate(0) translate(160px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(160px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit4 {
+    from {
+        transform: rotate(0) translate(240px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(240px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit5 {
+    from {
+        transform: rotate(0) translate(480px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(480px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit6 {
+    from {
+        transform: rotate(0) translate(300px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(300px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit7 {
+    from {
+        transform: rotate(0) translate(300px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(300px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes PlanetOrbit8 {
+    from {
+        transform: rotate(0) translate(300px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(300px) rotate(-360deg);
+    }
+    
+}
+.satellite {
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: satelliteorbit 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes satelliteorbit {
+    from {
+        transform: rotate(0) translate(20px) rotate(0);
+    } to {
+        transform: rotate(360deg) translate(20px) rotate(-360deg);
+    }
+}
