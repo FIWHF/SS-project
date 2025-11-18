@@ -1,8 +1,9 @@
 body {
-    min-height: 300dvh;
-    min-width: 300dvh;
+    min-height: 500dvh;
+    min-width: 500dvh;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .storage {
@@ -13,17 +14,17 @@ body {
     position: relative;
 }
 .sun {
-    height: 75px;
-    width: 75px;
-    background-color: darkred;
+    height: 375px;
+    width: 375px;
+    background-color: orange;
     border-radius: 100%;
 
 }
 
 .mercury {
 
-    width: 7px;
-    height: 7px;
+    width: 35px;
+    height: 35px;
     background-color: grey;
     border-radius: 100%;
     position: absolute;
@@ -33,123 +34,168 @@ body {
 
 .venus {
 
-    width: 14px;
-    height: 14px;
+    width: 70px;
+    height: 70px;
     background-color: grey;
     border-radius: 100%;
     position: absolute;
-    animation: PlanetOrbit2 11s infinite;
+    animation: PlanetOrbit2 7s infinite;
     animation-timing-function: linear;
 }
 
 .earth {
 
-    width: 15px;
-    height: 15px;
+    width: 75px;
+    height: 75px;
     background-color: lightblue;
     border-radius: 100%;
     position: absolute;
     animation: PlanetOrbit3 10s infinite;
     animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mars {
 
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
     background-color: maroon;
     border-radius: 100%;
     position: absolute;
-    animation: PlanetOrbit4 16s infinite;
+    animation: PlanetOrbit4 20s infinite;
     animation-timing-function: linear;
 }
 
 .jupiter {
 
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 250px;
     background-color: darkorange;
     border-radius: 100%;
     position: absolute;
-    animation: PlanetOrbit5 25s infinite;
+    animation: PlanetOrbit5 120s infinite;
+    animation-timing-function: linear;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMVFRUXFRcXFhgXFxgaFxcXFxUWFxUVFRcYHSggGB0lHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHSUtLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIANYA7AMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAABAMFBgcCAf/EADsQAAIBAwEFBQYEBgEFAQAAAAABAgMEESEFMUFRYRJxgZGhBhMiscHwFEJS0QcVMmLh8XJTc4KiwiP/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAiEQEBAAIBBAMBAQEAAAAAAAAAAQIREgMTIVEEMUEiYTL/2gAMAwEAAhEDEQA/AOGgAAAAAAAAAAAAAAAAAE1K1nLdFgQgWVLY1R8kNU/ZyT3y9CcovGqMDRL2Zf6mfX7LvhJ+ROUXjWcAvKns1UW6SfesCdbY1aP5c9zLyiaqvA91KUo6STXesHgqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAds9nynv0Q2smykIN6JZLG12RKW/QvrDZSWMIu7axRyy6mnSYKKz2LFcC3obOS4FtRtlyHKdujhl1G5jFXRseg1G1XIsYUD26DM86quVquR6VsiyVDvPUaXmTnU0q3ZrkRTslyLz8O+Xiefw451WZudlxksOKa6oob/2Wg9Y5g+m7y/Y6BK214ENWzNTq2JcZXIr/Y1Wlq12o819VwK46/cWOeBmdr+zUZ5cV2Jc1ufevqd8erL9ueXT9MMAxe2U6UuzNY5Pg+5i52cwAAAAAAAAAAAAAAAAB9SPiLrZOzstNolulk28bN2Y3rJeBp7Gw3aDVjYYLm3tUjzZ9R6McdILayxwHqVoMUqHIbp04re/vqcLbWikKROqYzGCZMqXIyhaNLTQ9qmxqNHOr06/4PaoYQCsoZJIWmUmTdglUFw08Rs0SdBnp2zGuudSWKyhs0rpW2BecORaVoNvp3kTpvp99xNrpWTt8i1a15ounakNSkXasjtXZEZpxksp/ehz7bWxZUHnVw4Pl0kdlq2/Qqr/AGappprKa3Hfp9WxzzwlcaAuvaPYcreWVl029Hy/tZSnrl284AAKAAAAAAAAAns6Hbkl5gObKse08tGy2dZdBfZVisLQ09naI55uuPh4o22m4cpwa4DlC1Q5C1zoee410mUIxfAbo1MLC7PfxHKNjje8k8NmozxpyhCjSW7K5DcaKWhOtmIZp2D/AFvzZmYX0vKFowW5erPsLbxfL/Wo2rRrKUs/P9z4raruymnvfHuyS42fhLECt197j6reK0z/AIGI2NThJ66b9y+2eo7Oqp47WUuungON9Luey0acV/nUi7EV+peQ9+FqP8/35akzsJtay16JJfIcL6Nz2rIpN7tOGr9T7OHOI/8AgJ8Z+ix8jzKxl+rHcO3fScp7V03CK3NLxINJLOHju1LZ2b/V+/mROzazlvXqXhfrScopK9XlF46oVqSb4F9K05sgq2yNzp1OcZDalgqkJRmsprDRynbGzZUKjhLdvi+aO8V7Ux3tfsL31J4Xxx1g+vGPj+x6em452OVAfWj4dGQAAAAAABpvZ+y0Te9mfs6famkbrY9JLAWL7Z1skXtrRK6yjEureCGol2Zo0UO07dENFLoOUn1HHFN5JadAYp0COE0uPqhqlLPFfMmsF/p9jRJYW+PvcSQiyaOftGuGKbqJWx7hb6YwTrJJEdvFeVQK2Z6Vsydv7eP9n1ZfLBeGJul/wvd5Hz8M0OLPP0/yEk0OGJuk3bHj8OPNfaI2nxL28fSbpGVv1IZ25Yzj3i84jt4+jlVdUoC1WgWVSIpUpvmOGPpm5VV16BUXtsjQVqZWXVIcZElriPtxsr3NftRXw1Mvul+ZfJ+JnDq/t5s33lvJpaw+NeG/0ycoM1uAAAigAAC02JTzLJstnrGDL7Bhoa+zpi/TeK1s2lqWCu3wRX0KY/Cmzz5O2OksbuXPHcTUa0s/FJ456kMYcyVUtNH6HDKO0sWlvXguTGLetro9MZ8OhSRi+Q5bVXFYxzw+/ejjY3r0u6e1FuzjgSSvH/1fVFE5J/6PtSonjCLyTt+l9O7cdVNslo7Sg97l99xn+1ne2Ef+S8jFy9NTp+PLaWPuZa731YxXjHfFY8foYylczWqkvVP0J4bQq44Y7/nzOs601q4ud6F3uVqYyS4s8QvIbu02zO1b+bWqX34Etneprsz+HXKl48WtVjmanyLuaZ7HjyvXf8skVTaHT1K2Vx8WO01w7TWYtcG8Hqq4zadLXGklLTPVJmp1ssv1m9Lj+LKldRfQjqXsU9SmuIyj+VpdF9CCc33od/I7EXVS9hzE618tUvBlT7zpxPFSpxx8zc+RlWb0JEtxct7xOpc8ydy03ENxGLeY7+Kf0NY5Xe6xljNKm/jlNPVPR+OhxC+t/d1Jw/TJryeh3K7p6HIfbKh2buf93Zl5pfsz1T6cP1SAAEUAAAajYMNEbKzhoZHYW5G02fuLVP0bcsKFFkVuyzt8HKwlL/hs8CWnYNjsHyiNUanNGLi1ypGjZ43xGY7PTXLkPxqdCaNZ8EjFwjczpW32ZHTK1yfJ7HedPUejUkSqEpccdxngvc8KOvs3G94IVYPr5Gmp2a3v92SwoR4bx24nPKsxDZjzuY9Q2R0L/wBykT05Y3YHZxq9zJRfyyS6rqRy2b0waR45fL9zz2V3m50MYXq5VTW2xnjV4z6kl3shSxhJYW/Dz37y4TfI+PXeL0sfxe5WflslvSU5ebPFPZ+HhvKfmX8okcojtpc6qobPihS9sU92n1LmcSCcEamEZudZ2Vk0sEMrXmXlaAhcI6TBxyyqlvKemDkX8RaWLmL5016Skdfuzk38S3/+9P8A7f8A9M661GZd1jwADLYAAA1Xs9L4UbbZ+5HPvZ+rpjkza7OrFVqbZFjQgUtrXLOhdNGdxNVbUaQ7TtkVtC+Q5Tvl4k30/Z/RuNqyeFsxeF/Hm+4Yp7QiZs6ftf69J4W7JY20iOntGD3DMdpw5+g1h7Xz6fI20iVWksdT1HaceL9GSR2pDnnwZf4n6mqidvjhk+qn0PU9px5eenzPjvaW/OH0z9Bvp39NZRLCLJOwxX+YQR5jtNN7m13feRMsPa/16NyieZRYt/MIr8r7v9kVbaEe775Ic8PZrIzKD5o8ODEp30cbnnyFnfY3Z8/8E5YFmSxnTYtViKy2pw1YtXvsjlgmsklfIjXQVbtilW4bOkyxc7jkUvWcd/iLUzdY5U4rzcn9UdYvKjOKe1dx27qq96Uuyv8AxSX0Zu3wYzyqQADDYAAAsdi1cSwbfZ1Y53QqdmSZtNk184Ksa+2uMYLSjW/0UdkXNtnglnrk58avJaUKcUvieMjajGK0xnroV6pvvfIZp05ctef7EyxJTtusvd3LH0LL3kUk2lnXeVX4eWU8vPPOqPXZnnjJ78vXwySeJpf9WNGfJZ47tCanScm9VFZ830FYVqiS66buL0bPValLRLOmPF7vvvMWT9al9HlbR5rq8a/MHTjvT7SzjX5ENTttdppLquL5nyNZpJSk9NUm9F1S3GNSteYsbexhvkl8kiCtCOrhHKjnLTePDqJU6mXhtTXFZzjXCeNxNUuXHEZPC10S0wt2Eu8bmtaXVN2UoSXBaZfcL3N52NFLThz6C8XKrnC7FPOr4ywfZV6MNEsvnvM5dSYzz4ax6dv+o1Vb1e7q94g9qxzjCWpaPadNrDi8dy/2J3ex4z1gzjLM/wDm7ejGdv8A6iJ3a4YR4leIRuNk1IPBD+HqDjk1b06elerkQ1Lz+0hjb1OYStJvXL9TrjjXLK9N9dy5PGBO4uZJtMYlYS3vIpXt8HfDCvPnlh+Kza9/2Kc5vdGLb8EcWqTcm5Pe22+9nQf4hX/YpqknrN6/8Y6v1wc8PRfTz/dAABFAAAAX/s/ecHwKAltqzhJNAdU2bcppF/aVlpoYPY95lLDNTZ1W0a2WNRQqIchXS4N92pm/fzXAnhfT5GL1CYNXTrrONfLQYhUhv+SefQysNpS5E9Pac+RO9Gu3WthODW8lUIc/Uy1Pa8uKySLbEv0/t5jvY/sXt5L9KPa7MU882tPQfpQgtefMy0dryWnZ/wDYnntprGcR78vK8DE6mM8rwyviL68soTXw4UuDWj80UdWlJVI+8Umlvfi+Pl5Hn+evhu4b/wBiWO2KmP6M+JnO9PP/ABqTPHwYv6nwfA9MaY4GYqV5JYWjLyV23vprp8Sz4vQhfYlvoPPevrg8XyfjXq+ca9Xx/kdv7iqo1pYw9X0NDsqMkkuIvS7Mf6acV45foseoxTumuS8H4a5J8b4nau7dnyPldyak0sG2Qy7vkJTu5YWX6fXJHUunnT7XefQleKnKsxWrUEq10KyuG/vcbmTnYnqzeuu8pto1kk22MXFdLic9/iDt7sx9xB/FP+rpHl4/I3jfDNjG+0e0vf15T/L/AEx/4rc/Hf4lYAEbgAAAAAAAAACy2RfuEsN6fI3GzNos5qXOx9qdlqMvB/QK6ja375FhSvuaRkdn3qa3l1QqrmYu18NBTvVxihmldxWMQX31Kek+o8pprd8XPOhjyvhY0biOXmEfBjSuaf6V6FRDw9D3TwTdXUWtGss6xi10WH8yRypPVw7txVLTkS0Wspzz2ej1J5+l8LSNSlyZKriG7s6d37lZc1ItrsZx13eHEIvmX6RZqtD9J6dxD9H+iq98fPe6llRZ1bqnxTyLSlF8JeIr7/zPLuiW2hp1Y8n5kFStHf2fUXlcogndRRfIYdx/b6iNes9dPUjudoLhoUO3Nvwowc5vuXFvkjcjna8e0u2429NylhyekI83+xyS7uZVJynN5lJ5bGNr7TncVHOb7lwiuSETZJ+gAAKAAAAAAAAAAAAALTZm1XDClu5mt2dtKLxqc+J7a6lB6PwJVjrFvdp8Syo1epzXZ2208JvDNDabT6nO2xuY7bWEuozTxzMtR2h1HKd8+ZjnPRwrSpr7+h6055KGN4+ZNG6fMvchwq+TXMI43ZKRXb5n13T5juROFXXZXNnx01zKdXT5nx3XUnPE41bSgv1P0IpwjxbKp3nUXrXvUc56Xhfa1mkKV7iC5FFf7YjBNymku8xe2Pa2Usxo6L9T3+CNY236jNmvutT7Qe01Kiml8U+EV9eSOcbS2jUrzc6jy+C4JckLTm2222297e88nWMgAAoAAAAAAAAAAAAAAAAAAAABq2v5w3PK6ioAaK02+vzZXyLq12vGW6S8zBn1MxcJWplXTKW0eo1C96nL6d5UW6b8xmG2Ky/N6Gb015umK9PSvOpzVberc15f5B7frc15E7RzdJlfdSGptJLezm1Ta9Z/nfhhCtSvKX9Um+9svahzb689paUfz5fJa/IoL72qnLSmsdXv8jOAamEiXKpbi5nN5nJyfUiADbIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q==);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.saturn {
+
+    width: 225px;
+    height: 225px;
+    background-color: beige;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit6 240s infinite;
+    animation-timing-function: linear;
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uranus {
+
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit7 420s infinite;
     animation-timing-function: linear;
 }
 
 
+.neptune {
+
+    width: 155px;
+    height: 155px;
+    background-color: darkblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit8 890s infinite;
+    animation-timing-function: linear;
+}
+
+
+
 @keyframes PlanetOrbit1 {
     from {
-        transform: rotate(0) translate(60px) rotate(0);
+        transform: rotate(0) translate(600px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(60px) rotate(-360deg);
+        transform: rotate(360deg) translate(600px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit2 {
     from {
-        transform: rotate(0) translate(90px) rotate(0);
+        transform: rotate(0) translate(900px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(90px) rotate(-360deg);
+        transform: rotate(360deg) translate(900px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit3 {
     from {
-        transform: rotate(0) translate(160px) rotate(0);
+        transform: rotate(0) translate(1600px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(160px) rotate(-360deg);
+        transform: rotate(360deg) translate(1600px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit4 {
     from {
-        transform: rotate(0) translate(240px) rotate(0);
+        transform: rotate(0) translate(2400px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(240px) rotate(-360deg);
+        transform: rotate(360deg) translate(2400px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit5 {
     from {
-        transform: rotate(0) translate(480px) rotate(0);
+        transform: rotate(0) translate(4800px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(480px) rotate(-360deg);
+        transform: rotate(360deg) translate(4800px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit6 {
     from {
-        transform: rotate(0) translate(300px) rotate(0);
+        transform: rotate(0) translate(6200px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(300px) rotate(-360deg);
+        transform: rotate(360deg) translate(6200px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit7 {
     from {
-        transform: rotate(0) translate(300px) rotate(0);
+        transform: rotate(0) translate(7900px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(300px) rotate(-360deg);
+        transform: rotate(360deg) translate(7900px) rotate(-360deg);
     }
     
 }
 
 @keyframes PlanetOrbit8 {
     from {
-        transform: rotate(0) translate(300px) rotate(0);
+        transform: rotate(0) translate(8500px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(300px) rotate(-360deg);
+        transform: rotate(360deg) translate(8500px) rotate(-360deg);
     }
     
 }
 .satellite {
-    width: 5px;
-    height: 5px;
+    width: 15px;
+    height: 15px;
     background-color: grey;
     border-radius: 100%;
     position: absolute;
@@ -159,8 +205,8 @@ body {
 
 @keyframes satelliteorbit {
     from {
-        transform: rotate(0) translate(20px) rotate(0);
+        transform: rotate(0) translate(70px) rotate(0);
     } to {
-        transform: rotate(360deg) translate(20px) rotate(-360deg);
+        transform: rotate(360deg) translate(70px) rotate(-360deg);
     }
 }
